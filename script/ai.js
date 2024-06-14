@@ -4,10 +4,10 @@ module.exports.config = {
   version: '1.0.0',
   role: 0,
   hasPrefix: false,
-  aliases: ['gpt', 'openai'],
+  aliases: ['gpt', 'ae'],
   description: "An AI command powered by GPT-4",
-  usage: "Ai [promot]",
-  credits: '𝗮𝗲𝘀𝘁𝗵𝗲𝗿',
+  usage: "Ai questions" ,
+  credits: 'aesther',
   cooldown: 3,
 };
 module.exports.run = async function({
@@ -17,17 +17,17 @@ module.exports.run = async function({
 }) {
   const input = args.join(' ');
   if (!input) {
-    api.sendMessage(`♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓`, event.threadID, event.messageID);
+    api.sendMessage(`♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓\🛜 [Autobot]✨:\nhttps://www.facebook.com/thegodess.aesther\n〉「𝙰𝚎𝚜𝚝𝚑𝚎𝚛」`, event.threadID, event.messageID);
     return;
   }
   api.sendMessage(``, event.threadID, event.messageID);
   try {
     const {
       data
-    } = await axios.get(`https://hashier-api-globalgpt.vercel.app/api/globalgpt?q=${encodeURIComponent(input)}`);
+    } = await axios.get(`https://soyeon-api.onrender.com/api?prompt=${encodeURIComponent(input)}`);
     const response = data.response;
-    api.sendMessage('♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓\n🌐['+ response +'] ♡\n♡   𝘢𝘦𝘴𝘵𝘩𝘦𝘳-[📩]\n┗ღ❦ღ━━━━━━━┛\n[✦]|𝗚𝗣𝗧-𝟰 ', event.threadID, event.messageID);
+    api.sendMessage('♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓' + response + '\n[📩]\n┗ღ❦ღ━━━━━━━┛ ', event.threadID, event.messageID);
   } catch (error) {
-    api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
+    api.sendMessage('⚠️ 🫠エラー。。。。。 ⚠️', event.threadID, event.messageID);
   }
 };
