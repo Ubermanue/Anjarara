@@ -92,18 +92,15 @@ body {
 		 text-align: center;
 }
 
-.form-check {
-	display: flex;
-	margin-top: 10px;
-	padding: 14px;
-	align-items: center;
-	border: 1px solid #red;
-	border-radius: 8px;
-	cursor: pointer;
-	transition: background-color 0.3s ease, border-color 0.3s ease; 
-	border-color: #ccc;
-	background-color: #fff;
-}
+.body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.postimg.cc/3x8wpd8W/1718854280186.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    padding: 20px;
+  }
 
 .form-check:hover {
 	background-color: #f5f5; 
