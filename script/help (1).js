@@ -29,26 +29,26 @@ module.exports.run = async function({
       for (let i = start; i < Math.min(end, commands.length); i++) {
         helpMessage += `✪ \t${i + 1}▪﹝${prefix}${commands[i]}﹞\n`;
       }
-      helpMessage += '\n━ 𝗘𝗩𝗘𝗡𝗧.𝗟𝗜𝗦𝗧- ˕ -ྀマ[🏷️]\n━━━━━━━━━━━\n';
+      helpMessage += '\n━ 𝗘𝗩𝗘𝗡𝗧.𝗟𝗜𝗦𝗧- ˕ -ྀマ[🌌]\n━━━━━━━━━━━\n';
       eventCommands.forEach((eventCommand, index) => {
         helpMessage += `✦ \t${index + 1}▪﹝${prefix}${eventCommand}﹞\n`;
       });
-      helpMessage += `\n\n▪[📚]𝗣𝗔𝗚𝗘 : [${page}/${Math.ceil(commands.length / pages)}] ฅ^.ᆺ.^ฅ\n━━━━━━━━━━━\n[🆔]𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗕𝗬 : 𝗔𝗡𝗝𝗔/𝗧𝗛𝗘𝗔🏅\n[🗝️]▪𝗟𝗜𝗡𝗞-𝗙𝗕 :https://www.facebook.com/thegodess.aesther\n[⚙️]𝗟𝗜𝗡𝗞 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 :\n🔵 https://theaesther.onrender.com/\n🔵 https://anjaaesther.onrender.com/`;
+      helpMessage += `\n\n▪[🌌]𝗣𝗔𝗚𝗘 : [${page}/${Math.ceil(commands.length / pages)}] ฅ^.ᆺ.^ฅ\n━━━━━━━━━━━\n[🆔]𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗕𝗬 : 𝗔𝗡𝗝𝗔/𝗧𝗛𝗘𝗔🏅\n[🗝️]▪𝗟𝗜𝗡𝗞-𝗙𝗕 :https://www.facebook.com/thegodess.aesther\n[⚙️]𝗟𝗜𝗡𝗞 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 :\n🔵 https://theaesther.onrender.com/\n🔵 https://anjaaesther.onrender.com/`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else if (!isNaN(input)) {
       const page = parseInt(input);
       const pages = 20;
       let start = (page - 1) * pages;
       let end = start + pages;
-      let helpMessage = `▪〉𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝘀 - 𝗟𝗜𝗦𝗧(－－〆)[🔖]\n━━━━━━━━━━━\n`;
+      let helpMessage = `▪〉𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝘀 - 𝗟𝗜𝗦𝗧(－－〆)[🌌]\n━━━━━━━━━━━\n`;
       for (let i = start; i < Math.min(end, commands.length); i++) {
         helpMessage += `✪ \t${i + 1}▪﹝${prefix}${commands[i]}﹞\n`;
       }
-      helpMessage += '\n━ 𝗘𝗩𝗘𝗡𝗧.𝗟𝗜𝗦𝗧- ˕ -ྀマ[🏷️]\n━━━━━━━━━━━\n';
+      helpMessage += '\n━ 𝗘𝗩𝗘𝗡𝗧.𝗟𝗜𝗦𝗧- ˕ -ྀマ[🌌]\n━━━━━━━━━━━\n';
       eventCommands.forEach((eventCommand, index) => {
         helpMessage += `✦ \t${index + 1}▪﹝${prefix}${eventCommand}﹞\n`;
       });
-      helpMessage += `\n▪[📚]𝗣𝗔𝗚𝗘 : [${page}/${Math.ceil(commands.length / pages)}] ฅ^.ᆺ.^ฅ\n━━━━━━━━━━━\n[🆔]𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗕𝗬 : 𝗔𝗡𝗝𝗔/𝗧𝗛𝗘𝗔🏅\n[🗝️]▪𝗟𝗜𝗡𝗞-𝗙𝗕 :https://theaesther.onrender.com/\n[⚙️]𝗟𝗜𝗡𝗞 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 :https://anjaaesther.onrender.com/`;
+      helpMessage += `\n▪[🌌]𝗣𝗔𝗚𝗘 : [${page}/${Math.ceil(commands.length / pages)}] ฅ^.ᆺ.^ฅ\n━━━━━━━━━━━\n[🆔]𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗕𝗬 : 𝗔𝗡𝗝𝗔/𝗧𝗛𝗘𝗔🏅\n[🗝️]▪𝗟𝗜𝗡𝗞-𝗙𝗕 :https://theaesther.onrender.com/\n[⚙️]𝗟𝗜𝗡𝗞 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 :https://anjaaesther.onrender.com/`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else {
       const command = [...Utils.handleEvent, ...Utils.commands].find(([key]) => key.includes(input?.toLowerCase()))?.[1];
@@ -91,7 +91,7 @@ module.exports.handleEvent = async function({
     messageID,
     body
   } = event;
-  const message = prefix ? '☁️𝗣𝗥𝗘𝗙𝗜𝗫^- ⩊ -マ₎𐒡☁️\n━━━━━━━━━\n➤𝙲𝙼𝙳𝚂: ' + prefix : "𝙎𝙊𝙍𝙍𝙔........(ᵕ—ᴗ—) ♡\n━━━━━━━━━━━\nI don't have 𝚊 𝗣𝗥𝗘𝗙𝗜𝗫";
+  const message = prefix ? '🌌𝗣𝗥𝗘𝗙𝗜𝗫^- ⩊ -マ₎𐒡🌌\n━━━━━━━━━\n➤𝙲𝙼𝙳𝚂: ' + prefix : "𝙎𝙊𝙍𝙍𝙔........(ᵕ—ᴗ—) ♡\n━━━━━━━━━━━\nI don't have 𝚊 𝗣𝗥𝗘𝗙𝗜𝗫";
   if (body?.toLowerCase().startsWith('prefix')) {
     api.sendMessage(message, threadID, messageID);
   }
